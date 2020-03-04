@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* [リセットCSS]要素を空白なく詰めて表示できる*/
+
+a {
+  text-decoration: none;
+}
+/*aの要素（主に文字）の下線や青文字（初期設定）を消せる*/
+
+.clearfix ::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*float(cssで設定）と一緒に使う。浮かせたfloteの要素を
+通常縦並びから横並びにできる　（取り消せる）*/
+/*::after(疑似要素）直後の意味
+　;;before(疑似要素）直前の意味
+直前・直後の要素に反映される*/
+/* contentで隙間を作る*/
+/* display: block;で横に引き延ばす（並べる？）*/
+/*clear: both;両方にかかったflote要素を取り消す*/
